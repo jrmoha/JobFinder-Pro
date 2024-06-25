@@ -310,6 +310,7 @@ node index.js
 ```
 
 ---
+5. Signup as a user or company to access the features and don't forget to specify Bearer token and put it before token in token header.
 
 ## Project Roadmap
 
