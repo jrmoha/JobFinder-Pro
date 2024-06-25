@@ -1,0 +1,881 @@
+{
+	"info": {
+		"_postman_id": "128dc43a-6fce-4511-a6ea-978826fb1916",
+		"name": "jobs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19605929"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mayada\",\r\n    \"lastName\": \"El Henaway\",\r\n    \"email\": \"Mayada___@outlook.com\",\r\n    \"password\": \"Ahmed1\",\r\n    \"password_confirmation\":\"Ahmed1\",\r\n    \"DOB\": \"2001-12-10\",\r\n    \"mobileNumber\": \"01223321313121\",\r\n    \"recoveryEmail\":\"Mayada_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/register",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"query\": \"dash@google.com\",\r\n    \"password\": \"Mostafa11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWU1M2FkMDU1ZTUxZmEwMjIwYTVlOCIsImVtYWlsIjoiTWF5YWRhX19fQG91dGxvb2suY29tIiwidXNlcm5hbWUiOiJNYXlhZGEgRWwgSGVuYXdheSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzA1OTIzODI1LCJleHAiOjE3MDYwMTAyMjV9.7mJWdIXENXE94b86uAv1M5g8So0hwZYnYrHbv_J5AI4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Mona\",\r\n    \"lastName\": \"Ahmed\",\r\n    \"email\": \"mona@google.com\",\r\n    \"mobileNumber\": \"0122332131312\",\r\n    \"DOB\": \"2001-9-29\",\r\n    \"recoveryEmail\": \"monmon@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJkZDc4OWUzZTE5NmRjODQzNGZkYyIsImVtYWlsIjoiZGFzaDU1NTEyQGdvb2dsZS5jb20iLCJ1c2VybmFtZSI6Ik1vc3RhZmEgTW9oYW1tZWQiLCJyb2xlIjoiVXNlciIsImlhdCI6MTcwNjEwODk1MiwiZXhwIjoxNzA2MTk1MzUyfQ.1gvLFUa8DuRsq-VaJ0qGho6uDXL2svY4dEj-ujFNs9U",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"nada\",\r\n     \"mobileNumber\": \"01223323052\",\r\n    \"recoveryEmail\":\"dash_@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/delete",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWU1M2FkMDU1ZTUxZmEwMjIwYTVlOCIsImVtYWlsIjoiTWF5YWRhX19fQG91dGxvb2suY29tIiwidXNlcm5hbWUiOiJNYXlhZGEgRWwgSGVuYXdheSIsInJvbGUiOiJVc2VyIiwiaWF0IjoxNzA1OTIzODI1LCJleHAiOjE3MDYwMTAyMjV9.7mJWdIXENXE94b86uAv1M5g8So0hwZYnYrHbv_J5AI4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"nada\",\r\n     \"mobileNumber\": \"01223323052\",\r\n    \"recoveryEmail\":\"dash_@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/me",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJNb3N0YWZhIE1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDU3NDE0MzQsImV4cCI6MTcwNTgyNzgzNH0.R8kbZ9Q9eKngd-9ZqEs6Z3a-MWh_dw4NgEodDqCwuXI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"nada\",\r\n     \"mobileNumber\": \"01223323052\",\r\n    \"recoveryEmail\":\"dash_@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/65ab8a30297e6d2bd03bf084",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"65ab8a30297e6d2bd03bf084"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJuYWRhIG1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDYxMDg0MzMsImV4cCI6MTcwNjE5NDgzM30.K_tsfuYyb4oheMO7YciAOYKrRoV1ETpuUnvMUmBOtx8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\": \"Mostafa1\",\r\n    \"password\": \"Mostafa11\",\r\n    \"password_confirmation\": \"Mostafa11\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/change-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJNb3N0YWZhIE1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDU3NDE0MzQsImV4cCI6MTcwNTgyNzgzNH0.R8kbZ9Q9eKngd-9ZqEs6Z3a-MWh_dw4NgEodDqCwuXI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"dash@google.com\",\r\n    \"password\": \"Mostafa1\",\r\n    \"password_confirmation\": \"Mostafa1\",\r\n    \"otp\": \"569219\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/forgot-password",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "request otp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJNb3N0YWZhIE1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDU3NDE0MzQsImV4cCI6MTcwNTgyNzgzNH0.R8kbZ9Q9eKngd-9ZqEs6Z3a-MWh_dw4NgEodDqCwuXI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"dash@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/send-otp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all associated with recovery email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJNb3N0YWZhIE1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDU3NDE0MzQsImV4cCI6MTcwNTgyNzgzNH0.R8kbZ9Q9eKngd-9ZqEs6Z3a-MWh_dw4NgEodDqCwuXI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\":\"nada\",\r\n     \"mobileNumber\": \"01223323052\",\r\n    \"recoveryEmail\":\"dash_@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/all?recoveryEmail=Mayada_@outlook.com",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"all"
+							],
+							"query": [
+								{
+									"key": "recoveryEmail",
+									"value": "Mayada_@outlook.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "company",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\": \"Lenovo\",\r\n    \"description\": \"SW Services\",\r\n    \"industry\": \"Software Engineering\",\r\n    \"address\": \"US\",\r\n    \"numberOfEmployees\": \"20\",\r\n    \"companyEmail\": \"len@google.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Inova\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"15\",\r\n      \"companyEmail\":\"Inova@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/update/65ae58241f00105f85e946ce",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"update",
+								"65ae58241f00105f85e946ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/delete/65ae58241f00105f85e946ce",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"delete",
+								"65ae58241f00105f85e946ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "company data",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/65abfda3b55cfa1a1536affd",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"65abfda3b55cfa1a1536affd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/search?q=route",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "route"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "applications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDU5MjM0MTMsImV4cCI6MTcwNjAwOTgxM30.y4q8b9O17xBLBmbopy8yeWUPuoEhr56ylnvpMI3rIGw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/applications",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"applications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "today's applications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwNTY0MzMsImV4cCI6MTcwNjE0MjgzM30.3WfD18Vx86OIYarBOAHtL53GZSkw0Dpi1nBAajOUuDA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/company/applications/today",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"company",
+								"applications",
+								"today"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "job",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwMTQxODksImV4cCI6MTcwNjEwMDU4OX0.iP36R742zDALR4aYVQeBNwlfshSMV_lSlXtBZi97u44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"jobTitle\": \"Software Developer intern\",\r\n  \"jobLocation\": \"onsite\",\r\n  \"workingTime\": \"full-time\",\r\n  \"seniorityLevel\": \"Mid-Level\",\r\n  \"jobDescription\": \"Exciting opportunity for a skilled software developer!\",\r\n  \"techinicalSkills\": [\"Java\", \"React\", \"Node.js\",\"DS\",\"Algorithms\"],\r\n  \"softSkills\": [\"Communication\", \"Problem Solving\", \"Adaptability\"]\r\n  }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwMTQxODksImV4cCI6MTcwNjEwMDU4OX0.iP36R742zDALR4aYVQeBNwlfshSMV_lSlXtBZi97u44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"jobLocation\":\"hybrid\",\r\n    \"softSkills\": [\"Problem Solving\", \"Adaptability\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/update/65b0762f869848e9dc23ddd3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"update",
+								"65b0762f869848e9dc23ddd3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwMTQxODksImV4cCI6MTcwNjEwMDU4OX0.iP36R742zDALR4aYVQeBNwlfshSMV_lSlXtBZi97u44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/delete/65b076c2869848e9dc23dde3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"delete",
+								"65b076c2869848e9dc23dde3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all jobs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwMTQxODksImV4cCI6MTcwNjEwMDU4OX0.iP36R742zDALR4aYVQeBNwlfshSMV_lSlXtBZi97u44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWJmZDE1YTFkYTFhYWQ1YjU2YjY4YiIsImVtYWlsIjoiQWhtZWRAaHIuY29tIiwidXNlcm5hbWUiOiJBaG1lZCBJYnJhaGltIiwicm9sZSI6IkNvbXBhbnlfSFIiLCJpYXQiOjE3MDYwMTQxODksImV4cCI6MTcwNjEwMDU4OX0.iP36R742zDALR4aYVQeBNwlfshSMV_lSlXtBZi97u44",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyName\":\"Route_\",\r\n      \"description\":\"IT courses\",\r\n      \"industry\":\"Back-End\",\r\n      \"address\":\"Victoria\",\r\n      \"numberOfEmployees\":\"10\",\r\n      \"companyEmail\":\"Route_@outlook.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/search?name=Routes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Routes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search with filter",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWI4YTMwMjk3ZTZkMmJkMDNiZjA4NCIsImVtYWlsIjoiZGFzaEBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJuYWRhIG1vaGFtbWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDYxMDkzNDUsImV4cCI6MTcwNjE5NTc0NX0.m9J9OrqKX18brF6fkqgCS7yNGlPjdzh6yU3D3aB2q8E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"workingTime\": \"part-time\",\r\n    \"jobLocation\": \"onsite\",\r\n    \"seniorityLevel\": \"Junior\",\r\n    \"techinicalSkills\": [\r\n        \"JavaScript\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/job/search/filter",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"search",
+								"filter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "apply",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWU1M2FkMDU1ZTUxZmEwMjIwYTVlOCIsImVtYWlsIjoibW9uYUBnb29nbGUuY29tIiwidXNlcm5hbWUiOiJNb25hIEFobWVkIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3MDYwNTY1MDgsImV4cCI6MTcwNjE0MjkwOH0.l6VrCIvVXXIPCEBG9JuKk80mrwaEYTjp_PjHKsnjRno",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resume",
+									"type": "file",
+									"src": "/D:/College/1699770968475.pdf"
+								},
+								{
+									"key": "userSoftSkills[0]",
+									"value": "Problem Solving",
+									"type": "text"
+								},
+								{
+									"key": "resume",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "userTechSkills[0]",
+									"value": "Back-End",
+									"type": "text"
+								},
+								{
+									"key": "userTechSkills[1]",
+									"value": "Node.js",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/job/apply/65ad0b82db2da8c23a63155a",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"job",
+								"apply",
+								"65ad0b82db2da8c23a63155a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
