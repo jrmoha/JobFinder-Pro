@@ -42,7 +42,10 @@
 - [Getting Started](#getting-started)
   - [Installation](#installation)
   - [Running JobFinder-Pro](#running-jobfinder-pro)
-  - [Tests](#tests)
+  - [API Reference](#api-reference)
+  - [User](#1---user)
+  - [Company](#2---company)
+  - [Job](#3---job)
 - [Project Roadmap](#project-roadmap)
 
 ---
