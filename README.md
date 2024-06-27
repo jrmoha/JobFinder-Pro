@@ -147,119 +147,119 @@ JobFinder-Pro is a comprehensive job search application that enables users to se
 <details>
   <summary>package.json</summary>
 
-| File                                                                                       | Summary                              |
-| ---                                                                                        | ---                                  |
-| [package.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/package.json)           | Configuration and dependencies       |
-| [package-lock.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/package-lock.json) | Lockfile for dependencies            |
+| File                                                                                       | Summary                        |
+| ------------------------------------------------------------------------------------------ | ------------------------------ |
+| [package.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/package.json)           | Configuration and dependencies |
+| [package-lock.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/package-lock.json) | Lockfile for dependencies      |
 
 </details>
 
 <details>
   <summary>index.js</summary>
 
-| File                                                                                       | Summary                              |
-| ---                                                                                        | ---                                  |
-| [index.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/index.js)                   | Entry point for the application      |
+| File                                                                     | Summary                         |
+| ------------------------------------------------------------------------ | ------------------------------- |
+| [index.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/index.js) | Entry point for the application |
 
 </details>
 
 <details>
   <summary>config</summary>
 
-| File                                                                                    | Summary                              |
-| ---                                                                                     | ---                                  |
-| [.env.example](https://github.com/jrmoha/JobFinder-Pro/blob/master/config/.env.example) | Environment variable example file    |
+| File                                                                                    | Summary                           |
+| --------------------------------------------------------------------------------------- | --------------------------------- |
+| [.env.example](https://github.com/jrmoha/JobFinder-Pro/blob/master/config/.env.example) | Environment variable example file |
 
 </details>
 
 <details>
   <summary>database</summary>
 
-| File                                                                                                             | Summary                              |
-| ---                                                                                                              | ---                                  |
-| [index.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/index.js)                                | Database connection setup            |
-| [application.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/application.model.js) | Application schema definition        |
-| [company.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/company.model.js)         | Company schema definition            |
-| [job.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/job.model.js)                 | Job schema definition                |
-| [user.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/user.model.js)               | User schema definition               |
+| File                                                                                                             | Summary                       |
+| ---------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| [index.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/index.js)                                | Database connection setup     |
+| [application.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/application.model.js) | Application schema definition |
+| [company.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/company.model.js)         | Company schema definition     |
+| [job.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/job.model.js)                 | Job schema definition         |
+| [user.model.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/database/models/user.model.js)               | User schema definition        |
 
 </details>
 
 <details>
   <summary>doc</summary>
 
-| File                                                                                                                               | Summary                              |
-| ---                                                                                                                                | ---                                  |
-| [jobs.finder.postman_collection.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/doc/jobs.finder.postman_collection.json) | Postman collection for API testing   |
+| File                                                                                                                               | Summary                            |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [jobs.finder.postman_collection.json](https://github.com/jrmoha/JobFinder-Pro/blob/master/doc/jobs.finder.postman_collection.json) | Postman collection for API testing |
 
 </details>
 
 <details>
   <summary>src</summary>
 
-| File                                                                     | Summary                              |
-| ---                                                                      | ---                                 
+| File | Summary |
+| ---- | ------- |
 
- |
-| [app.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/app.js) | Application initialization           |
+|
+| [app.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/app.js) | Application initialization |
 
 </details>
 
 <details>
   <summary>src/middleware</summary>
 
-| File                                                                                                                            | Summary                                   |
-| ---                                                                                                                             | ---                                       |
-| [async.handler.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/async.handler.js)                         | Middleware for async error handling       |
-| [authentication.middleware.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/authentication.middleware.js) | Middleware for authentication             |
-| [error.handler.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/error.handler.js)                         | Middleware for error handling             |
-| [validation.middleware.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/validation.middleware.js)         | Middleware for input validation           |
+| File                                                                                                                            | Summary                             |
+| ------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
+| [async.handler.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/async.handler.js)                         | Middleware for async error handling |
+| [authentication.middleware.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/authentication.middleware.js) | Middleware for authentication       |
+| [error.handler.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/error.handler.js)                         | Middleware for error handling       |
+| [validation.middleware.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/middleware/validation.middleware.js)         | Middleware for input validation     |
 
 </details>
 
 <details>
   <summary>src/utils</summary>
 
-| File                                                                                               | Summary                              |
-| ---                                                                                                | ---                                  |
-| [APIError.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/APIError.js)           | Custom API error class               |
-| [cloudinary.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/cloudinary.js)       | Cloudinary configuration             |
-| [input.schema.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/input.schema.js)   | Input validation schema              |
-| [media.types.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/media.types.js)     | Media types definitions              |
-| [multer.global.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/multer.global.js) | Multer configuration                 |
+| File                                                                                               | Summary                  |
+| -------------------------------------------------------------------------------------------------- | ------------------------ |
+| [APIError.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/APIError.js)           | Custom API error class   |
+| [cloudinary.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/cloudinary.js)       | Cloudinary configuration |
+| [input.schema.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/input.schema.js)   | Input validation schema  |
+| [media.types.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/media.types.js)     | Media types definitions  |
+| [multer.global.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/utils/multer.global.js) | Multer configuration     |
 
 </details>
 
 <details>
   <summary>src/modules/company</summary>
 
-| File                                                                                                                   | Summary                                        |
-| ---                                                                                                                    | ---                                            |
-| [company.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.controller.js) | Company controller functions                   |
-| [company.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.routes.js)         | Routes for company endpoints                   |
-| [company.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.validate.js)     | Validation for company data                    |
+| File                                                                                                                   | Summary                      |
+| ---------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| [company.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.controller.js) | Company controller functions |
+| [company.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.routes.js)         | Routes for company endpoints |
+| [company.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/company/company.validate.js)     | Validation for company data  |
 
 </details>
 
 <details>
   <summary>src/modules/job</summary>
 
-| File                                                                                                       | Summary                               |
-| ---                                                                                                        | ---                                   |
-| [job.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.controller.js) | Job controller functions              |
-| [job.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.routes.js)         | Routes for job endpoints              |
-| [job.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.validate.js)     | Validation for job data               |
+| File                                                                                                       | Summary                  |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------ |
+| [job.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.controller.js) | Job controller functions |
+| [job.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.routes.js)         | Routes for job endpoints |
+| [job.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/job/job.validate.js)     | Validation for job data  |
 
 </details>
 
 <details>
   <summary>src/modules/user</summary>
 
-| File                                                                                                          | Summary                              |
-| ---                                                                                                           | ---                                  |
-| [user.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.controller.js) | User controller functions            |
-| [user.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.routes.js)         | Routes for user endpoints            |
-| [user.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.validate.js)     | Validation for user data             |
+| File                                                                                                          | Summary                   |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| [user.controller.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.controller.js) | User controller functions |
+| [user.routes.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.routes.js)         | Routes for user endpoints |
+| [user.validate.js](https://github.com/jrmoha/JobFinder-Pro/blob/master/src/modules/user/user.validate.js)     | Validation for user data  |
 
 </details>
 
@@ -310,7 +310,422 @@ node index.js
 ```
 
 ---
+
 5. Signup as a user or company to access the features and don't forget to specify Bearer token and put it before token in token header.
+
+---
+
+## API Reference
+
+### 1 - User
+
+#### Create new user
+
+```http
+  POST /users/register
+```
+
+**Request Body:**
+
+| Key           | Type   | Required |
+| ------------- | ------ | -------- |
+| firstName     | string | Yes      |
+| lastName      | string | Yes      |
+| email         | string | Yes      |
+| password      | string | Yes      |
+| DOB           | string | Yes      |
+| mobileNumber  | string | Yes      |
+| recoveryEmail | string | No       |
+
+#### Login
+
+```http
+  POST /users/login
+```
+
+**Request Body:**
+
+| Key      | Type   | Required | Description            |
+| -------- | ------ | -------- | ---------------------- |
+| query    | string | Yes      | email or mobile number |
+| password | string | Yes      |                        |
+
+#### Update user
+
+```http
+  PATCH /users/update
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key           | Type   | Required |
+| ------------- | ------ | -------- |
+| email         | string | No       |
+| mobileNumber  | string | No       |
+| recoveryEmail | string | No       |
+| DOB           | string | No       |
+| firstName     | string | No       |
+| lastName      | string | No       |
+
+#### Delete user
+
+```http
+  DELETE /users/delete
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+#### Current user
+
+```http
+  GET /users/me
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+#### User profile
+
+```http
+  GET /users/:id
+```
+
+**Parameters:**
+
+| Key | Value  | Description |
+| --- | ------ | ----------- |
+| id  | string | User ID     |
+
+#### Change Password
+
+```http
+  PATCH /users/change-password
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key                   | Type   | Required |
+| --------------------- | ------ | -------- |
+| old_password          | string | Yes      |
+| password              | string | Yes      |
+| password_confirmation | string | Yes      |
+
+#### Forgot Password
+
+```http
+  POST /users/forgot-password
+```
+
+**Request Body:**
+
+| Key      | Type   | Required |
+| -------- | ------ | -------- |
+| email    | string | Yes      |
+| otp      | string | Yes      |
+| password | string | Yes      |
+
+#### Request Otp
+
+```http
+  POST /users/send-otp
+```
+
+**Request Body:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| email | string | Yes      |
+
+#### Get all associated with recovery email
+
+```http
+  GET /users/all?recoveryEmail=:email
+```
+
+**Parameters:**
+
+| Key   | Value  | Description    |
+| ----- | ------ | -------------- |
+| email | string | Recovery Email |
+
+---
+
+### 2 - Company
+
+#### Add Company
+
+```http
+  POST /company/add
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key               | Type   | Required |
+| ----------------- | ------ | -------- |
+| companyName       | string | Yes      |
+| description       | string | Yes      |
+| industry          | string | Yes      |
+| address           | string | Yes      |
+| numberOfEmployees | number | Yes      |
+| companyEmail      | string | Yes      |
+
+#### Update Company
+
+```http
+  PATCH /company/update/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key               | Type   | Required |
+| ----------------- | ------ | -------- |
+| companyName       | string | No       |
+| description       | string | No       |
+| industry          | string | No       |
+| address           | string | No       |
+| numberOfEmployees | number | No       |
+| companyEmail      | string | No       |
+
+#### Delete Company
+
+```http
+  DELETE /company/delete/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Parameters:**
+
+| Key | Type   | Required |
+| --- | ------ | -------- |
+| id  | string | Yes      |
+
+#### Company Data
+
+```http
+  GET /company/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Parameters:**
+
+| Key | Type   | Required |
+| --- | ------ | -------- |
+| id  | string | Yes      |
+
+#### Search
+
+```http
+  GET /company/search?q=:query
+```
+
+**Parameters:**
+
+| Key | Type   | Required | Description  |
+| --- | ------ | -------- | ------------ |
+| q   | string | Yes      | Search query |
+
+#### Applications
+
+```http
+  GET /company/applications
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+#### Today's Applications
+
+```http
+  GET /company/applications/today
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+---
+
+### 3 - Job
+
+#### Add Job
+
+```http
+  POST /job/add
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key             | Type   | Required |
+| --------------- | ------ | -------- |
+| jobTitle        | string | Yes      |
+| jobLocation     | string | Yes      |
+| workingTime     | string | Yes      |
+| seniorityLevel  | string | Yes      |
+| jobDescription  | string | Yes      |
+| technicalSkills | string | Yes      |
+| softSkills      | string | Yes      |
+
+#### Update job
+
+```http
+  PATCH /job/update/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Request Body:**
+
+| Key             | Type   | Required |
+| --------------- | ------ | -------- |
+| jobTitle        | string | No       |
+| jobLocation     | string | No       |
+| workingTime     | string | No       |
+| seniorityLevel  | string | No       |
+| jobDescription  | string | No       |
+| technicalSkills | string | No       |
+| softSkills      | string | No       |
+
+**Parameters:**
+
+| Key | Type   | Required |
+| --- | ------ | -------- |
+| id  | string | Yes      |
+
+#### Delete job
+
+```http
+  DELETE /job/delete/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Parameters:**
+
+| Key | Type   | Required |
+| --- | ------ | -------- |
+| id  | string | Yes      |
+
+#### All jobs
+
+```http
+  GET /job/all
+```
+
+#### Search
+
+```http
+  GET /job/search?name=:query
+```
+
+**Parameters:**
+
+| Key  | Type   | Required | Description  |
+| ---- | ------ | -------- | ------------ |
+| name | string | Yes      | Search query |
+
+#### Search by Filter
+
+```http
+  GET /job/search/filter
+```
+
+**Request Body:**
+
+| Key              | Type   | Required |
+| ---------------- | ------ | -------- |
+| workingTime      | string | No       |
+| jobLocation      | string | No       |
+| seniorityLevel   | string | No       |
+| jobTitle         | string | No       |
+| techinicalSkills | string | No       |
+
+#### Apply for a job
+
+```http
+  POST /job/apply/:id
+```
+
+**Headers:**
+
+| Key   | Type   | Required |
+| ----- | ------ | -------- |
+| token | string | Yes      |
+
+**Parameters:**
+
+| Key | Type   | Required | Description |
+| --- | ------ | -------- | ----------- |
+| id  | string | Yes      | Job ID      |
+
+**Request Body:**
+
+| Key            | Type     | Required |
+| -------------- | -------- | -------- |
+| userTechSkills | [string] | Yes      |
+| userSoftSkills | [string] | Yes      |
+| resume         | file     | Yes      |
+
+---
 
 ## Project Roadmap
 
